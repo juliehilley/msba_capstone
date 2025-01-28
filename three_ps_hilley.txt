@@ -1,0 +1,29 @@
+January 27, 2025 - Week 1
+Progress: What have you accomplished since last week’s post?
+I have accomplished the following so far:
+1) Extracted most of the data that I will be using for my project with the exception of year 2019 - historical sales and inventory levels.
+2) Created a csv file containing the door count/foot traffic data for all three locations of JDC for the relevant years.
+3) Interviewed & Shadowed the following: a) Current 'Inventory Manager' at JDC who has been in the position for approx. 9 years and is planning on retiring soon. 
+b) Inventory Assistant (who plays an important role because she has been with the company for a long time, but does not fully understand best practices of inventory management
+because for so long they have basically 'flown by the seat of their pants'.)
+c) Met and Interviewed the second owner/client (Denver Toone) - who will have a more hands-on role in this project.
+d) Sat in on 2 separate 'inventory' meetings with company stakeholders, including a consultant who oversees the POS/Analytics software (which is not being utilized to its capacity.)
+
+Problems: What are you stuck on or struggling with?
+So far I haven't encountered too many problems, but I can foresee problems on the horizon. I haven't recieved all of the data yet, but I feel confident I will get that resolved 
+this week. After interviewing many current employees, I do have some fear that the process may become difficult because of 'fear of change'. I have personally been well-received, but there 
+are many individuals who have expressed the resistance to change has been very prevalent in the recent past. Overcoming obstacles like this could be very challenging. My plan is to be 
+open-minded and respectful of key positions and to present things in a very positive way. After meeting with some key people including the inventory consultant I learned that 60% of
+their current on-hand inventory is 'aged' - meaning it is >3 years old, some upwards of 10 years. Their total inventory currently sits north of $11 million. This obviously does not
+happen overnight. Inventory turn for this industry is 1x annually. Because the majority of inventory hasn't moved in such a long time, they need to be extremely aggressive in discounting
+and implementing other strategies to move. Basically, 40% of their inventory is carrying the business but if we can implement some processes to correct this, they can be very successful.
+Right now, it just screams "there is A LOT of work to do!!" 
+
+Plans: What do you intend to accomplish between now and next week’s post?
+I intend to get 100% of the data I'm looking for, and to also connect more deeply with some of the key players who will be able to assist me with this project. I'd like to begin cleaning
+the data in order to begin some EDA.
+
+How many hours did you spend working on your Capstone since last week’s post?
+So far I have spent roughly 40 hours (or more). I spend 4 full days in Spokane at the headquarters interviewing and shadowing people. Another multitude of hours manually entering 
+door counts for 6 years, and many more hours researching, reading, writing and thinking.
+
