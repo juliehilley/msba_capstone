@@ -1,4 +1,4 @@
-January 27, 2025 - Week 1
+# January 27, 2025 - Week 1
 Progress: What have you accomplished since last week’s post?
 I have accomplished the following so far:
 1) Extracted most of the data that I will be using for my project with the exception of year 2019 - historical sales and inventory levels.
@@ -27,8 +27,7 @@ How many hours did you spend working on your Capstone since last week’s post?
 So far I have spent roughly 40 hours (or more). I spend 4 full days in Spokane at the headquarters interviewing and shadowing people. Another multitude of hours manually entering 
 door counts for 6 years, and many more hours researching, reading, writing and thinking.
 
-February 3, 2025 - Week 2
-
+# February 3, 2025 - Week 2
 Progress: What have you accomplished since last week’s post?
 1. We determined that working with sales data from 2020-2024 is sufficient. After talking to the client, his feeling about 2019 was that it is irrelevant, stating “we live in a post-covid world”. I will proceed with sales for 5 years for locations 1 & 2, and 1 year + 3 months for location 3. I also pulled an inventory report from the POS. It appears to be everything I need to get started. I’ve been cleaning this csv file to ensure naming conventions are accurate between the sales and inventory variables. 
 2. I got a digital version of a book titled, “Forecasting; Principles and Practice” by Rob Hyndman and George Athanasopoulos which I have started reading. They talk about Time Series Regression Models, Exponential Smoothing, and ARIMA models. The book uses R and offers a lot of example code with detailed explanations. 
