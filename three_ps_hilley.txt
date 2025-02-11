@@ -7,6 +7,8 @@ What I am learning is that the data entry process is a mess and has been since t
 
 Plans: What do you intend to accomplish between now and next week's post? Since I have spent the bulk of my time so far uncovering the idiosynchrosies of the data with GBQ running SQL queries, I plan to start formulating the business problem so that I can explore modeling in PYthon. The partner who lives in Spokane will be in town a few days this week and I'll spend some time with him examining what I have uncovered so far and have some questions answered so I can proceed.  
 
+How many hours did I spend? About 20-30
+
 # February 3, 2025 - Week 2
 Progress: What have you accomplished since last week’s post?
 1. We determined that working with sales data from 2020-2024 is sufficient. After talking to the client, his feeling about 2019 was that it is irrelevant, stating “we live in a post-covid world”. I will proceed with sales for 5 years for locations 1 & 2, and 1 year + 3 months for location 3. I also pulled an inventory report from the POS. It appears to be everything I need to get started. I’ve been cleaning this csv file to ensure naming conventions are accurate between the sales and inventory variables. 
