@@ -1,3 +1,28 @@
+# February 10, 2025 - Week 3
+Progress: What have you accomplished since last week?
+All my data files are uploaded to a google cloud storage bucket, and then created/organized my tables in my GBQ project. It took a bit of troubleshooting and making sure all of my files were compatible with GBQ. I've got sales (20-24), inventory, and doorcount tables. I started querying and went down a rabbit hole of discovery. Since I'm working mostly onsite at JDC, I've been able to look up unknown or questionable findings in the POS system, and confirm that the data is sound. I was a little concerned about it at first but everything checks out. I have multiple SQL queries that include Avg Days in Inventory by Category, Category Level Sales Analysis, Inventory Turnover Rate by Category, Margin Analysis Comparison, Profitability Analysis, Sales Trends Seasonality, just to name a few.
+
+Problems: What are you struck on or struggling with?
+What I am learning is that the data entry process is a mess and has been since they started using the system. Also, some of the processes for tracking different types of transactions are glaring and skew the data when reporting. For example, they have a process for tracking in-store credit that results in an extremely large error in gross profit margin. If I didn't know this process beforehand, I would have been completely in the dark about what the queries turned up. What has become most apparent at this time is that if they don't correct some of these processes then it will continue to be a problem.
+
+Plans: What do you intend to accomplish between now and next week's post? Since I have spent the bulk of my time so far uncovering the idiosynchrosies of the data with GBQ running SQL queries, I plan to start formulating the business problem so that I can explore modeling in PYthon. The partner who lives in Spokane will be in town a few days this week and I'll spend some time with him examining what I have uncovered so far and have some questions answered so I can proceed.  
+
+# February 3, 2025 - Week 2
+Progress: What have you accomplished since last week’s post?
+1. We determined that working with sales data from 2020-2024 is sufficient. After talking to the client, his feeling about 2019 was that it is irrelevant, stating “we live in a post-covid world”. I will proceed with sales for 5 years for locations 1 & 2, and 1 year + 3 months for location 3. I also pulled an inventory report from the POS. It appears to be everything I need to get started. I’ve been cleaning this csv file to ensure naming conventions are accurate between the sales and inventory variables. 
+2. I got a digital version of a book titled, “Forecasting; Principles and Practice” by Rob Hyndman and George Athanasopoulos which I have started reading. They talk about Time Series Regression Models, Exponential Smoothing, and ARIMA models. The book uses R and offers a lot of example code with detailed explanations. 
+3. Now that I have data, and it is somewhat clean, my plan is to start with visualizing it this week using various methods explained in the above book.
+
+Problems: What are you stuck on or struggling with?
+1. Honestly I have not yet defined the business problem. I’ve discovered the way in which the inventory is categorized and entered into the POS has been a little haphazard and could present some problems. They currently have 91 categories of inventory, and they have allowed the ability to ‘add’ fields arbitrarily when entering inventory into the system. After doing some EDA and visualization I am hopeful that a more defined problem will present itself. They have many aspects of the business including repair and service, and this alone could offer some possibilities. TBD
+2. I had a conversation with the client, and he is acting apprehensive about what I am doing. He stated, “your project is secondary” in the context of priorities. I don’t think he fully understands what the project entails and this could be partially due to not having the business problem defined. 
+
+Plans: What do you intend to accomplish between now and next week’s post?
+1. I plan on spending the next few days/weeks doing as much EDA and visualization as I can, and to outline a specific problem to solve. 
+
+How many hours did you spend working on your Capstone since last week’s post? Between 8-12 hours.
+
+
 # January 27, 2025 - Week 1
 Progress: What have you accomplished since last week’s post?
 I have accomplished the following so far:
@@ -27,17 +52,3 @@ How many hours did you spend working on your Capstone since last week’s post?
 So far I have spent roughly 40 hours (or more). I spend 4 full days in Spokane at the headquarters interviewing and shadowing people. Another multitude of hours manually entering 
 door counts for 6 years, and many more hours researching, reading, writing and thinking.
 
-# February 3, 2025 - Week 2
-Progress: What have you accomplished since last week’s post?
-1. We determined that working with sales data from 2020-2024 is sufficient. After talking to the client, his feeling about 2019 was that it is irrelevant, stating “we live in a post-covid world”. I will proceed with sales for 5 years for locations 1 & 2, and 1 year + 3 months for location 3. I also pulled an inventory report from the POS. It appears to be everything I need to get started. I’ve been cleaning this csv file to ensure naming conventions are accurate between the sales and inventory variables. 
-2. I got a digital version of a book titled, “Forecasting; Principles and Practice” by Rob Hyndman and George Athanasopoulos which I have started reading. They talk about Time Series Regression Models, Exponential Smoothing, and ARIMA models. The book uses R and offers a lot of example code with detailed explanations. 
-3. Now that I have data, and it is somewhat clean, my plan is to start with visualizing it this week using various methods explained in the above book.
-
-Problems: What are you stuck on or struggling with?
-1. Honestly I have not yet defined the business problem. I’ve discovered the way in which the inventory is categorized and entered into the POS has been a little haphazard and could present some problems. They currently have 91 categories of inventory, and they have allowed the ability to ‘add’ fields arbitrarily when entering inventory into the system. After doing some EDA and visualization I am hopeful that a more defined problem will present itself. They have many aspects of the business including repair and service, and this alone could offer some possibilities. TBD
-2. I had a conversation with the client, and he is acting apprehensive about what I am doing. He stated, “your project is secondary” in the context of priorities. I don’t think he fully understands what the project entails and this could be partially due to not having the business problem defined. 
-
-Plans: What do you intend to accomplish between now and next week’s post?
-1. I plan on spending the next few days/weeks doing as much EDA and visualization as I can, and to outline a specific problem to solve. 
-
-How many hours did you spend working on your Capstone since last week’s post? Between 8-12 hours.
