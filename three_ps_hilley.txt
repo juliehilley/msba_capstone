@@ -1,3 +1,15 @@
+# February 18, 2025 - Week 4
+Progress: What have you accomplished since last week?
+Finally was able to have a conversation with the client to determine the 'problem'. I'll be focusing on just the inventory for the stores that are vendor-based categories and have a higher turn than the categories which make up the 'manufacturing' aspects of the business. I received an example of a worksheet that the client fills in manually on a monthly basis and I will focus on replicating this. I have started to parse out the data to focus only on the categories within the data that are relevant to the problem.
+
+Problems: What are you stuck on?
+Now that I have more clarity, I'll be able to focus on moving forward. 
+
+Plans: What do you intend to accomplish between now and next week?
+A lot more than I accomplished this past week.
+
+How many hours? 4-6
+
 # February 10, 2025 - Week 3
 Progress: What have you accomplished since last week?
 All my data files are uploaded to a google cloud storage bucket, and then created/organized my tables in my GBQ project. It took a bit of troubleshooting and making sure all of my files were compatible with GBQ. I've got sales (20-24), inventory, and doorcount tables. I started querying and went down a rabbit hole of discovery. Since I'm working mostly onsite at JDC, I've been able to look up unknown or questionable findings in the POS system, and confirm that the data is sound. I was a little concerned about it at first but everything checks out. I have multiple SQL queries that include Avg Days in Inventory by Category, Category Level Sales Analysis, Inventory Turnover Rate by Category, Margin Analysis Comparison, Profitability Analysis, Sales Trends Seasonality, just to name a few.
