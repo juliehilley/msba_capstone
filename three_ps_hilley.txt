@@ -1,3 +1,16 @@
+# Feb 25, 20925
+Progress: What have you accomplished since last week?
+Explored the 'inventory' table through various SQL queries and python visualizations. I ultimately created a new table called 'filtered_inventory' based on the timeframe of my sales data. There is alot of aged inventory and it results in skewing the turnover rate so much that I feel like this metric makes this metric irrelevant, but I really need to have a longer discussion for possibilities about how to deal with this. 
+
+Problems: What are you stuck on?
+I feel like I'm stuck in the weeds of my datasets. Because I have little to no input from my 'client', I feel a little lost and have a disillusioned outlook on the purpose of this project in terms of what they are/are not invested in. In my opinion, the leadership in this company is struggling with direction and clear goals. This has become apparent not only through my lens regarding my project, but in other areas of the company as well. I'll try my best to stay the course but it has felt quite discouraging. 
+
+Plans: What do you intend to accomplish between now and next week?
+The plan is to create a clear path to  move forward. In terms of the Data Science Process diagram of Problem Framing, Data Acquisition, Data Preparation, Model Planning, Model Building, Visualization/Communication and Deployment Maintenance, I am currently moving into the Model Planning phase so that feels like progress. 
+
+How many hours? 15ish
+
+
 # February 18, 2025 - Week 4
 Progress: What have you accomplished since last week?
 Finally was able to have a conversation with the client to determine the 'problem'. I'll be focusing on just the inventory for the stores that are vendor-based categories and have a higher turn than the categories which make up the 'manufacturing' aspects of the business. I received an example of a worksheet that the client fills in manually on a monthly basis and I will focus on replicating this. I have started to parse out the data to focus only on the categories within the data that are relevant to the problem.
