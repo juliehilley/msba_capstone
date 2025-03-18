@@ -1,3 +1,10 @@
+# March 18, 2025 - Week 8
+Progress: I spent some time restructuring my github repo. Started work creating my forecasting models and reorganizaing my first draft of written product.
+Problems: Not many to report this week. I was out of town for a few days so I have not spent alot of time on my project this week.
+Plans: This week I will be spending most of my time building models, writing, and organizing/building my dashboard.
+How many hours?: 2 
+
+
 # March 11, 2025 - Week 7
 JDC Shareholder presentation to be scheduled for late April/early May. It might be difficult to get both owners together physically
 so I am hoping for the best with this.
