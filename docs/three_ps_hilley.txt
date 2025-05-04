@@ -1,3 +1,36 @@
+# April 28, 2025 - Week 14
+Progress/Problems/Plans: submitted slides and continue wrestling with Looker. All's good.
+
+# April 22, 2025 - Week 13
+Progress/Problems/Plans: Presented today to JDC - it went well. Not alot of feedback from the owner, but manager had some questions and comments. Recorded the session which was a little awkward because we were huddled around my laptop.
+Continue work on the Looker dashboard - still giving me a few issues. Class presenation tomorrow.
+Hours: 12
+
+# April 15, 2025 - Week 12
+Progress/Problems/Plans: Was considering moving my presentation up to April 16, but decided to stay with 23rd. Preparing all of my material for next week's JDC/Class presenation. PPT slides are nearly done and Looker dashboard is coming along but is very quirky.
+Hours: 12
+
+# April 8, 2025 - Week 11
+Progress/Problems/Plans: I've taken feedback from peers re: written and incorporated most of the suggestions - I'm in a good spot with my written - submitted 2nd draft. Modeling is complete and have incorporated into written and have nearly completed the slides. Have been spending nearly all my time in Looker Studio.
+It is not the most user-friendly, but being open-source I feel it is a good tool to learn.
+Hours: 16
+
+# April 1, 2025 - Week 10
+Progress: Built my Prophet and SARIMA models based on 80/20 rule, finding that top 12 categories make up 80% of revenue. Continued modeling and comparing the evaluation metrics on these 12 and have determined a good path forward. Explored/modeled inventory based on sales forecasts.
+Continue to develop the written product around the findings of my modleing. Scheduled the stakeholder presentation for April 22, in-class presentation will be April 23 (but, thinking of moving it to 16th).
+Also started building out my presentation slides.
+Problems/Plans: Trying to work on a plan for a meaningful digital product - the project is static, and I've been aware that JDC doesn't plan to use any kind of digital product going forward. My plan is to mirror my presentation slides and build out a dashboard in Looker Studio.
+This is disappointing but reality.
+Hours: 20
+
+
+# March 25, 2025 - Week 9
+Progress: As I mentioned earlier, I felt like I was going down rabbit holes with the EDA, but this has been fruitful because it's given me the perspective I need to create a good outline for my written material and establish a clear outline of the project. Finalized the first draft of written and turned in on deadline.
+I spend alot of time in my head away from the computer thinking from a 30-thousand foot view. This helps me organize my thoughts to put down on paper. Along with creating a good outline, I started researching the forecast models and have experimented with Prophet and SARIMA. 
+Problems: Continue to have difficulty engaging with the stakeholders. They've been away for corporate meetings so when they return I hope to get my presentation on the calendar.
+Plans: continue with forecasting sales and inventoy modeling.
+Hours: 16
+
 # March 18, 2025 - Week 8
 Progress: I spent some time restructuring my github repo. Started work creating my forecasting models and reorganizaing my first draft of written product.
 Problems: Not many to report this week. I was out of town for a few days so I have not spent alot of time on my project this week.
