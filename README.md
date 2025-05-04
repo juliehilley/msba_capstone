@@ -104,7 +104,9 @@ msba_capstone/
 To run the notebooks or scripts locally:
 1. Clone the repository
 2. Install dependencies with `pip install -r requirements.txt`
-3. Set up Google Cloud authentication if accessing BigQuery
+3. ### Python Version
+This project was developed using **Python 3.11.8**. It is recommended to use this version (or higher within the 3.11.x series) for full compatibility.
+4. Set up Google Cloud authentication if accessing BigQuery
 
 
 > *Note: Raw data files are not included in this repo due to privacy/confidentiality agreements.*
