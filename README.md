@@ -13,11 +13,10 @@ The goal of this project is to develop **data-driven insights and predictive mod
 ```
 msba_capstone/
 │── data/           # Placeholder for raw and processed data (not included)
-│── docs/           # Supporting documentation (e.g., data dictionary, methodology)
+│── docs/           # Supporting documentation (e.g., final written report, requirements, methodology)
 │── images/         # Visuals used in notebooks and reports
 │── notebooks/      # Jupyter notebooks for analysis and modeling
 │── src/            # Python scripts for data processing and forecasting
-│── reports/        # Final report and presentation materials
 │── .gitignore      # Ensures sensitive files are excluded
 │── README.md       # Project overview and setup guide
 ```
