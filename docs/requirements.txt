@@ -1,3 +1,6 @@
+# MSBA Capstone - Julie Hilley
+# requirements.txt - reproducible environment for analysis and forecasting
+
 # Core Data Analysis
 python_version >= 3.11, < 3.12
 
@@ -10,6 +13,7 @@ seaborn==0.12.2
 
 # Forecasting Models
 prophet==1.1.2
+cmdstanpy==1.1.0  # Optional but often needed with prophet
 statsmodels==0.13.5
 scikit-learn==1.2.2
 xgboost==1.7.6
