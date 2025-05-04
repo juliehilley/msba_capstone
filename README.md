@@ -1,83 +1,111 @@
 # JDC Sales & Inventory Forecasting – MSBA Capstone Project
 
 ## **Project Overview**
-This capstone project for the University of Montana's MSBA program focuses on **sales and inventory forecasting** for **Jewelry Design Center (JDC)**. JDC operates multiple locations and specializes in custom jewelry design, retail sales, and repair services. 
+This capstone project for the University of Montana's Master of Science in Business Analytics (MSBA) program focuses on **sales and inventory forecasting** for **Jewelry Design Center (JDC)**. JDC operates multiple locations and specializes in custom jewelry design, retail sales, and repair services. 
 
-The goal of this project is to develop **data-driven insights and predictive models** that support inventory planning and sales forecasting, helping JDC optimize its inventory management and business decision-making.
+The goal of this project is to develop **data-driven insights and predictive models** that support inventory planning and sales forecasting, helping JDC optimize inventory management and strategic decision-making.
+
+**Status**: Finalized for submission – May 2025
 
 ---
 
 ## **Repository Structure**
-📂 capstone-project-2025 │── 📂 data/ # Placeholder for data files (data not included in repo) │── 📂 notebooks/ # Jupyter notebooks for analysis and modeling │── 📂 src/ # Python scripts for data processing, modeling, and visualization │── 📂 reports/ # Project documentation and final report │── 📂 docs/ # Supporting documentation (e.g., methodology, data dictionary) │── .gitignore # Ensures sensitive files are excluded │── requirements.txt # Dependencies for running the project │── README.md # Project overview and setup guide
+```
+msba_capstone/
+│── data/           # Placeholder for raw and processed data (not included)
+│── docs/           # Supporting documentation (e.g., data dictionary, methodology)
+│── images/         # Visuals used in notebooks and reports
+│── notebooks/      # Jupyter notebooks for analysis and modeling
+│── src/            # Python scripts for data processing and forecasting
+│── reports/        # Final report and presentation materials
+│── .gitignore      # Ensures sensitive files are excluded
+│── README.md       # Project overview and setup guide
+```
 
 ---
 
 ## **Objectives**
-- Clean, organize, and analyze **sales, inventory, and door count data (2020-2024).**
-- Focus on **retail transactions and inventory** that supports retail sales (**excluding custom orders and repairs**).
-- Use **Google BigQuery (GBQ)** for storage and querying, and **Python (VS Code)** for analysis and visualization.
-- Build a **forecasting model** to predict inventory needs based on **historical sales trends.**
-- Deliver **insights and recommendations** to JDC to optimize inventory management and **reduce stock-outs or overstocking.**
+- Clean, organize, and analyze **sales and inventory data from 2020–2024**
+- Focus exclusively on **retail sales**, excluding custom orders and repairs
+- Use **Google BigQuery (GBQ)** for data storage and querying
+- Use **Python** (in VS Code) for forecasting, analysis, and visualization
+- Build and compare **time series forecasting models** to predict future inventory needs
+- Deliver **strategic insights and recommendations** to reduce stock-outs and overstocking
 
 ---
 
 ## **Data Sources**
-### **1. Sales Data (2020-2024)**
-- **Transaction-level** sales for all JDC locations.
-- Originally provided as **CSV files**, **cleaned in Excel** for consistency.
-- **Uploaded to Google BigQuery** for structured analysis.
+### **1. Sales Data (2020–2024)**
+- Transaction-level retail sales across all JDC locations
+- Provided as CSV files; cleaned for consistency in Excel
+- Uploaded to Google BigQuery for structured querying
 
 ### **2. Inventory Data**
-- Extracted from **JDC's current POS system (The Edge).**
-- Includes **product details, categories, stock levels, and transaction history.**
-- Used to track **inventory turnover rates** and **aging stock.**
-
-### **3. Door Count Data**
-- Tracks **customer foot traffic** at each JDC location.
-- Helps **correlate foot traffic with sales trends** for better demand forecasting.
+- Extracted from JDC’s POS system (**The Edge**)
+- Includes product details, stock levels, entry dates, and categories
+- Used to calculate inventory turnover, aging, and margin metrics
 
 ---
 
 ## **Methodology & Data Processing**
 ### **1. Data Cleaning & Preparation**
-- Ensured **unique identifiers** for consistent joins between sales and inventory.
-- Standardized **measurement units, date formats, and categorical labels.**
-- Used **Excel** for preliminary cleaning before importing into **Google BigQuery.**
+- Ensured consistent **unique identifiers** for merging datasets
+- Standardized **date formats, labels, and measurement units**
+- Cleaned preliminary data in **Excel**, then imported into **BigQuery**
 
-### **2. Data Storage & Exploration in Google BigQuery**
-- Created a **Google Cloud Storage (GCS) bucket** for data uploads.
-- Established **BigQuery tables** under the project `"capstone-project-2025.jdc_data"`.
-- Conducted **Exploratory Data Analysis (EDA)** using SQL to analyze:
-  - **Sales trends** over time.
-  - **Inventory movement** by category.
-  - **Foot traffic correlations** with sales.
-  - **Profit margins** across different product types.
+### **2. Google BigQuery for Data Storage & SQL Analysis**
+- Created datasets and tables in the `capstone-project-2025.jdc_data` namespace
+- Used SQL to conduct **Exploratory Data Analysis (EDA)**:
+  - Sales and profit trends by time and category
+  - Inventory movement and product aging
+  - Retail revenue concentration (e.g., 80/20 rule)
 
-### **3. Data Filtering: Sales & Inventory Focus**
-- **Excluded** non-retail transactions (**custom orders, repairs, services**).
-- Defined a **subset of inventory categories** that align with retail sales.
-- Worked with **JDC stakeholders** to refine the **scope of analysis.**
+### **3. Filtering for Core Retail Focus**
+- Excluded **non-retail transactions** such as repairs and custom jobs
+- Retained categories that align with **core retail inventory**
+- Worked closely with JDC stakeholders to ensure business relevance
 
-### **4. Data Visualization & Forecasting in Python**
-- Connected **BigQuery to Python** for analysis and forecasting.
-- Created **visualizations** in Matplotlib and Seaborn to identify trends.
-- Built **time series models** to predict inventory needs, including:
-  - **Autoregressive (AR) models**
-  - **ARIMA forecasting**
-  - **Prophet models**
-  - **Machine Learning-based forecasting (e.g., XGBoost, Random Forest)**
-- Next steps: Model evaluation and **final recommendations for JDC.**
+### **4. Python Forecasting & Visualization**
+- Connected BigQuery to Python for model development
+- Created visualizations using **Matplotlib** and **Seaborn**
+- Applied two different forecasting techniques:
+  - **ARIMA**
+  - **Prophet**
+- Forecasts were generated at both **aggregate** and **category levels**
 
 ---
 
-## **Setup Instructions**
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/yourusername/msba_capstone.git
+## **Model Evaluation**
+- Evaluated models using **MAPE** and **RMSE**
+- **Prophet** delivered the best performance for most both single category and aggregated top 12 categories compared to **SARIMA** 
+- Model selection was based on **accuracy, interpretability, and alignment with JDC's planning needs**
+
+---
+
+## **Strategic Recommendations**
+- Focus inventory planning around the **top 12 categories**, which account for ~80% of retail revenue
+- Prepare for **seasonal surges** (especially in Q4) with targeted inventory boosts
+- **Reduce aged stock** by identifying slow-moving SKUs
+- Continue to **leverage forecasting tools** to adjust purchase timing and quantities
+
+---
+
+## **Final Deliverables**
+- Final written report and presentation (see `reports/` folder)
+- Forecasts for 2025–2026 retail inventory needs by top 12 categories
+- Visual analysis of historical sales and inventory patterns
+- Jupyter notebooks detailing full modeling workflow
+- Strategic insights for JDC’s executive and operations teams
+- *(Interactive Looker Studio dashboard available upon request)*
+
+---
+
+## **Setup Instructions (optional)**
+
+To run the notebooks or scripts locally:
+1. Clone the repository
+2. Install dependencies with `pip install -r requirements.txt`
+3. Set up Google Cloud authentication if accessing BigQuery
 
 
-## Setup Instructions
-_To be added: Instructions for setting up Python environment and accessing Google BigQuery._
-
-## License
-_License details to be determined._
+> *Note: Raw data files are not included in this repo due to privacy/confidentiality agreements.*
